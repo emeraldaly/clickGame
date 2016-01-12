@@ -1,14 +1,39 @@
-var counthold = 0;
+var players = document.getElementsByClassName("clique");
+var score = 0;
+var startTime = document.getElementById('start');
+var resetGame = document.getElementById('stop');
+var clock = 20;
+var timeLeft;
 
-function clickcount() {
-  counthold = parseInt(counthold) + parseInt(1);
+//Game timer and re-enable pictures
+
+function start() {
+  timeLeft = setInterval(function() {
+    document.getElementById('runningTime').innerHTML = --clock;
+    if (clock <= 0) {
+      document.getElementById('runningTime').innerHTML = "It's a shame you can't play ALL DAY! You clicked " + score + " members of my clique!";
+      clearInterval(interval);
+    }
+  }, 1000);
+  for (var i = 0; i < players.length; i++) {
+  players[i].removeAttribute("disabled");
 }
 
-
-function timecount() {
-  setTimeout(function countandgive()
-    { 
-      .modal('show').html("It's a shame you can't play ALL DAY! You clicked " + counthold + " members of my clique");
-    //alert("It's a shame you can't play ALL DAY.  You clicked " + counthold + " members of my clique"); 
-    }, 20000);
 }
+startTime.addEventListener("click", start);
+
+//Loop to increment score and disable pictures to prevent double clicks
+
+for (var i = 0; i < players.length; i++) {
+  players[i].addEventListener("click", function() {
+    score = score + 1;
+    this.disabled = true;
+  });
+}
+
+//Restart Game by Pushing Button
+
+function restartGame() {
+  window.location.reload();
+}
+resetGame.addEventListener("click", restartGame);
