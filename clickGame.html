@@ -2,74 +2,113 @@
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="clickGameStyleSheet.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/clickGameStyleSheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>"Clique - Yeezus"</title>
+  <title>"Clique - Yeezus"</title>
 
 </head>
 <body>
-  <div class= "header">
-    <h2>Push the button to push Yeezy's buttons: Ain't nobody f***ing with my clique game.    
-      <button class="btn btn-default active pull-right" onclick="timecount()">KanYES - Push to start</button></div>
+  <div class="container-fluid">
+    <h2>Push the button to push Yeezy's buttons: Ain't nobody f***ing with my clique game.
     </h2>
+  <br />
+            <div class="col-xs-12 col-sm-2">
+              <table class="table scorer">
+                <tr>
+                  <td>
+                    <h4>Score</h4></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 id="runningCount">0</h2></td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-xs-12 col-sm-2">        
+              <table class="table timer">
+                <tr>
+                  <td>
+                    <h4>Time</h4></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 id="runningTime">20</h2></td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+            <h5>Click as many pictures of his clique as possible in 20 seconds:</h5>
+             
+              <button class="btn btn-success active" id="start" onclick="timecount()">KanYES - Push to start</button>
+              <button class="btn btn-danger active" id="stop" onclick="stopgame()">KanYES - Push to stop</button>
+            </div>
+         </div>
+      
+      <!-- choosing all square images definitely comes in handy for formatting at once! -->
+      <div class="col-xs-12 col sm-10">
+          
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/yeezy.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/kim.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/Rick-Ross.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/taylorswift.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/mccartney.jpg" height="175px" onclick="clickcount();"></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/rihanna.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/neely.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/Kanye.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/Lupe-Fiasco.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/nicki_minaj_anaconda.png" height="175px"  onclick="clickcount();"></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/pusha-t.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/kendrick-lamar.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/beck.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/2chainz.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/drake.jpg" height="175px" onclick="clickcount();"></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/kanyes.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/BigSean.png" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/future.jpg" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/jayz.png" height="175px" onclick="clickcount();"></div>
+          <div class="col-md-2 col-lg-2 col-sm-2">
+            <img src="images/kanlol.jpg" height="175px" onclick="clickcount();"></div>
+        </div>  
+      <!--Modal-->
+      <div class="modal fade bs-example-modal-sm" id="score" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content"></div>
+        </div>
   </div>
-</br>
-  <h4>Click as many pictures of his clique as possible in 20 seconds:</h4>
-<!-- choosing all square images definitely comes in handy for formatting at once! -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="yeezy.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="kim.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="Rick-Ross.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="taylorswift.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="mccartney.jpg" height="175px" onclick="clickcount();"></div>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="rihanna.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="neely.jpg" height="175px" onclick="clickcount();"></div>
-           <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="Kanye.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="Lupe-Fiasco.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="nicki_minaj_anaconda.png" height="175px"  onclick="clickcount();"></div>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="pusha-t.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="kendrick-lamar.jpg" height="175px" onclick="clickcount();"></div>
-           <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="beck.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="2chainz.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="drake.jpg" height="175px" onclick="clickcount();"></div>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="kanyes.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="BigSean.png" height="175px" onclick="clickcount();"></div>
-           <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="future.jpg" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="jayz.png" height="175px" onclick="clickcount();"></div>
-          <div class="col-md-2 col-lg-2 col-sm-2">
-            <img src="kanlol.jpg" height="175px" onclick="clickcount();"></div>
-        </div>
-    </div>
-<script type="text/javascript" src="clickGame.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/clickGame.js"></script>
+  <script type="text/javascript" src="js/button.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
