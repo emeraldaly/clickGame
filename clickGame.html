@@ -3,7 +3,7 @@
 <head>
 
   <link rel="stylesheet" type="text/css" href="css/clickGameStyleSheet.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>"Clique - Yeezus"</title>
@@ -44,62 +44,79 @@
   <div class="col-xs-12 col sm-10">
     <div class="row">
       <button class="btn btn-default clique">
-        <img src="images/yeezy.jpg"></button>
+        <img src="images/yeezy.jpg" alt="Yeezy"></button>
       <button class="btn btn-default clique">
-        <img src="images/kim.jpg"></button>
+        <img src="images/kim.jpg" alt="Kim"></button>
       <button class="btn btn-default clique">
-        <img src="images/Rick-Ross.jpg"></button>
+        <img src="images/Rick-Ross.jpg" alt="Rick-Ross"></button>
       <button class="btn btn-default clique">
-        <img src="images/taylorswift.jpg"></button>
+        <img src="images/taylorswift.jpg" alt="Taylor_Swift"></button>
       <button class="btn btn-default clique">
-        <img src="images/mccartney.jpg"></button>
+        <img src="images/mccartney.jpg" alt="McCartney"></button>
     </div>
     <br />
     <div class="row">
       <button class="btn btn-default clique">
-        <img src="images/rihanna.jpg"></button>
+        <img src="images/rihanna.jpg" alt="Rihanna"></button>
       <button class="btn btn-default clique">
-        <img src="images/neely.jpg"></button>
+        <img src="images/neely.jpg" alt="Neely"></button>
       <button class="btn btn-default clique">
-        <img src="images/Kanye.jpg"></button>
+        <img src="images/Kanye.jpg" alt="Kayne"></button>
       <button class="btn btn-default clique">
-        <img src="images/Lupe-Fiasco.jpg"></button>
+        <img src="images/Lupe-Fiasco.jpg" alt="Lupe Fiasco"></button>
       <button class="btn btn-default clique">
-        <img src="images/nicki_minaj_anaconda.png"></button>
+        <img src="images/nicki_minaj_anaconda.png" alt="Anaconda"></button>
     </div>
     <br />
     <div class="row">
       <button class="btn btn-default clique">
-        <img src="images/pusha-t.jpg"></button>
+        <img src="images/pusha-t.jpg" alt="Pusha-T"></button>
       <button class="btn btn-default clique">
-        <img src="images/kendrick-lamar.jpg"></button>
+        <img src="images/kendrick-lamar.jpg" alt="Kendrick Lamar"></button>
       <button class="btn btn-default clique">
-        <img src="images/beck.jpg"></button>
+        <img src="images/beck.jpg" alt="Beck"></button>
       <button class="btn btn-default clique">
-        <img src="images/2chainz.jpg"></button>
+        <img src="images/2chainz.jpg" alt="2Chainz"></button>
       <button class="btn btn-default clique">
-        <img src="images/drake.jpg"></button>
+        <img src="images/drake.jpg" alt="Drake"></button>
     </div>
     <br />
     <div class="row">
       <button class="btn btn-default clique">
-        <img src="images/kanyes.jpg"></button>
+        <img src="images/kanyes.jpg" alt="Kaynes"></button>
       <button class="btn btn-default clique">
-        <img src="images/BigSean.png"></button>
+        <img src="images/BigSean.png" alt="Big Sean"></button>
       <button class="btn btn-default clique">
-        <img src="images/future.jpg"></button>
+        <img src="images/future.jpg" alt="Future"></button>
       <button class="btn btn-default clique">
-        <img src="images/jayz.png"></button>
+        <img src="images/jayz.png" alt="Jayz"></button>
       <button class="btn btn-default clique">
-        <img src="images/kanlol.jpg"></button>
+        <img src="images/kanlol.jpg" alt="Kanlol"></button>
     </div>
   </div>
-  <!--Modal-->
-  <div class="modal fade bs-example-modal-sm" id="score" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content"></div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Verified By
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Verified by Alyson</h4>
+      </div>
+      <div class="modal-body">
+        I have reviewed this code and verify it works.
+        <img src="images/AWVerified.jpg" alt="AWVerified"> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
+</div>
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="js/clickGame.js"></script>
   <script type="text/javascript" src="js/button.js"></script>
