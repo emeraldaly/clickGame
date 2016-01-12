@@ -9,87 +9,100 @@
   <title>"Clique - Yeezus"</title>
 
 </head>
+
 <body>
   <div class="container-fluid">
-    <h2>Push the button to push Yeezy's buttons: Ain't nobody f***ing with my clique game.
+    <h2>
+      Push the button to push Yeezy's buttons: Ain't nobody f***ing with my clique game.
     </h2>
-  <br />
-            <div class="col-xs-12 col-sm-2">
-              <table class="table scorer">
-                <tr>
-                  <td>
-                    <h4>Score</h4></td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2 id="runningCount">0</h2></td>
-                </tr>
-              </table>
-            </div>
-            <div class="col-xs-12 col-sm-2">        
-              <table class="table timer">
-                <tr>
-                  <td>
-                    <h4>Time</h4></td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2 id="runningTime">20</h2></td>
-                </tr>
-              </table>
-            </div>
-            <div class="col-xs-12 col-sm-8">
-            <h5>Click as many pictures of his clique as possible in 20 seconds:</h5>
-             
-              <button class="btn btn-success active" id="start" onclick="timecount()">KanYES - Push to start</button>
-              <button class="btn btn-danger active" id="stop" onclick="stopgame()">KanYES - Push to stop</button>
-            </div>
-         </div>
-      
-      <!-- choosing all square images definitely comes in handy for formatting at once! -->
-      <div class="col-xs-12 col sm-10">
-        <div class="row">
-          <button class="btn btn-default clique"><img src="images/yeezy.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/kim.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/Rick-Ross.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/taylorswift.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/mccartney.jpg"></button>
-      </div> 
-        <br />
-        <div class="row">
-          <button class="btn btn-default clique"><img src="images/rihanna.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/neely.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/Kanye.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/Lupe-Fiasco.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/nicki_minaj_anaconda.png"></button>
-        </div>
-        <br />
-        <div class="row">
-          <button class="btn btn-default clique"><img src="images/pusha-t.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/kendrick-lamar.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/beck.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/2chainz.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/drake.jpg"></button>
-        </div>
-        <br />
-        <div class="row">
-          <button class="btn btn-default clique"><img src="images/kanyes.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/BigSean.png"></button>
-          <button class="btn btn-default clique"><img src="images/future.jpg"></button>
-          <button class="btn btn-default clique"><img src="images/jayz.png"></button>
-          <button class="btn btn-default clique"><img src="images/kanlol.jpg"></button>
-        </div>  
-      </div>
-      <!--Modal-->
-      <div class="modal fade bs-example-modal-sm" id="score" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content"></div>
-        </div>
+    <br />
+    <div class="col-xs-12 col-sm-2">
+      <table class="table timer">
+        <tr>
+          <td>
+            <h4>Time</h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 id="runningTime">20</h2>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <h5>
+        Click as many pictures of his clique as possible in 20 seconds:
+      </h5>
+
+      <button class="btn btn-success active" id="start" onclick="timecount()">KanYES - Push to start</button>
+      <button class="btn btn-danger active" id="stop" onclick="stopgame()">KanYES - Push to stop</button>
+    </div>
+  </div>
+
+  <!-- choosing all square images definitely comes in handy for formatting at once! -->
+  <div class="col-xs-12 col sm-10">
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="images/yeezy.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/kim.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/Rick-Ross.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/taylorswift.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/mccartney.jpg"></button>
+    </div>
+    <br />
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="images/rihanna.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/neely.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/Kanye.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/Lupe-Fiasco.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/nicki_minaj_anaconda.png"></button>
+    </div>
+    <br />
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="images/pusha-t.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/kendrick-lamar.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/beck.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/2chainz.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/drake.jpg"></button>
+    </div>
+    <br />
+    <div class="row">
+      <button class="btn btn-default clique">
+        <img src="images/kanyes.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/BigSean.png"></button>
+      <button class="btn btn-default clique">
+        <img src="images/future.jpg"></button>
+      <button class="btn btn-default clique">
+        <img src="images/jayz.png"></button>
+      <button class="btn btn-default clique">
+        <img src="images/kanlol.jpg"></button>
+    </div>
+  </div>
+  <!--Modal-->
+  <div class="modal fade bs-example-modal-sm" id="score" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content"></div>
+    </div>
   </div>
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <!--<script type="text/javascript" src="js/clickGame.js"></script>-->
+  <script type="text/javascript" src="js/clickGame.js"></script>
   <script type="text/javascript" src="js/button.js"></script>
-  <script type="text/javascript" src="js/functionality.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
