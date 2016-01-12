@@ -1,5 +1,5 @@
 //Global Variables
-var players = document.getElementsByClassName("nbaImg");
+var players = document.getElementsByClassName("clique");
 var score = 0;
 var startTime = document.getElementById('start');
 var resetGame = document.getElementById('stop')
@@ -22,11 +22,11 @@ for (var i = 0; i < players.length; i++) {
 function start() {
   setTimeout(function() {
     if (score < 10) {
-      alert("You need some practice! You clicked on " + score + " images!");
+      alert("You only clicked on " + score + " members of my clique!");
     } else if (score >= 10 && score <= 15) {
-      alert("Not bad you clicked on " + score + " images!");
+      alert("Not bad you clicked on " + score + " members of my clique!");
     } else {
-      alert("Awesome job you clicked on " + score + " images!");
+      alert("It's a shame you can't play ALL DAY! You clicked " + score + " members of my clique!");
     };
   }, 20000)
   this.disabled=true;
