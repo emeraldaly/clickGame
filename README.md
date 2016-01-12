@@ -15,5 +15,7 @@ pushing it til the last minute.  That being said, I had fun with this one.
 -changed the pictures from div's to buttons so they are clickable.
 -followed example of others and added timer & disable images to avoid repeat clicks.
 -added start/restart button.
+-verified W3Validator
+-ran Lint tests
 
 
