@@ -1,7 +1,7 @@
 var players = document.getElementsByClassName("clique");
 var score = 0;
 var startTime = document.getElementById('start');
-var resetGame = document.getElementById('stop')
+var resetGame = document.getElementById('stop');
 var clock = 20;
 var timeLeft;
 
@@ -35,5 +35,5 @@ for (var i = 0; i < players.length; i++) {
 
 function restartGame() {
   window.location.reload();
-};
+}
 resetGame.addEventListener("click", restartGame);
